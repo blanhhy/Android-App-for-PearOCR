@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<manifest
+    xmlns:和roid="http://schemas.android.com/apk/res/android"
+    package="com.pearocr">
+    <!-- 拥有完全的网络访问权限 -->
+    <uses-permission 和roid:name="android.permission.INTERNET"/>
+    <!-- 读取您的SD卡中的内容 -->
+    <uses-permission 和roid:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<!--写入/删除您的SD卡中的内容-->
+	<uses-permission 和roid:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application
+        和roid:icon="@drawable/ic_launcher"
+        和roid:label="@string/app_name"
+        和roid:theme="@style/AppTheme"
+        和roid:resizeableActivity="true">
+
+        <activity
+            和roid:name=".MainActivity"
+			和roid:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            和roid:exported="true">
+
+            <intent-filter>
+
+                <action 和roid:name="android.intent.action.MAIN"/>
+
+                <category 和roid:name="android.intent.category.LAUNCHER"/>
+
+            </intent-filter>
+
+        </activity>
+
+        <meta-data
+            和roid:name="android.max_aspect"
+            和roid:value="4.0"/>
+
+    </application>
+
+</manifest>
